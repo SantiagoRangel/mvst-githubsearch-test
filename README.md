@@ -1,10 +1,10 @@
 # Github repositories searcher
 
-This is a test project made for MVST. In this site a user can look for a Github user and take a look at their repositories. A filtering features is enabled for these. Live url : [Link Text](https://mvst-githubsearch-test.vercel.app/)
+This is a test project made for MVST. In this site a user can look for a Github user and take a look at their repositories. A filtering features is enabled for these. Live url: [https://mvst-githubsearch-test.vercel.app/](https://mvst-githubsearch-test.vercel.app/)
 
 ## How to run
 
-To run this project make sure you cloned the repository and then run the following commands from the root folder. Before running the commands and a .env file containing the Github graphql api endpoint as well as a Github authentication token.
+To run this project make sure you cloned the repository and then run the following commands from the root folder. Before running the commands and a .env file containing the Github graphql api endpoint as well as a Github authentication token. Please use pnpm as the package manager.
 
 ```console
 VITE_GITHUB_TOKEN=<API TOKEN>
@@ -12,11 +12,11 @@ VITE_API_URL=https://api.github.com/graphql
 ```
 
 ```console
-npm install
+pnpm install
 ```
 
 ```console
-npm run dev
+pnpm dev
 ```
 
 Future Improvements

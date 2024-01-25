@@ -180,8 +180,8 @@ export default function UserRepositories() {
     )
 
   return (
-    <div className="w-screen min-h-screen flex py-10 justify-center">
-      <div className="flex px-0 md:px-10  w-[70rem] flex-col md:flex-row  gap-10">
+    <div className="w-screen min-h-screen flex py-10 justify-center overflow-hidden">
+      <div className="flex px-10   max-w-screen  w-[70rem] flex-col md:flex-row  gap-10">
         <div className="w-[23rem] flex flex-col ">
           <ProfilePreview userData={data.user} />
           <div className="mt-5 ml-2 md:ml-6">

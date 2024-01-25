@@ -5,12 +5,19 @@ export default function SearchInput({
 }: {
   getValue: (value: string) => void
 }) {
+  /**
+   * Passes value from input to the callback function when user presses enter key
+   * @param e KeyboardEvent
+   */
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === "Enter") {
       getValueFromInput()
     }
   }
 
+  /**
+   * Passes value from input to the callback function when user clicks the search icon
+   */
   const getValueFromInput = (): void => {
     const input = document.querySelector(".searchInput") as HTMLInputElement
     const value = input?.value

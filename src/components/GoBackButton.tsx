@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom"
 export default function GoBackButton() {
   const navigate = useNavigate()
 
+  /**
+   * Uses react router dom useNavigate hook to navigate to home
+   */
   const goToHome = (): void => {
     navigate("/")
   }

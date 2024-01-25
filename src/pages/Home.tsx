@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom"
 export default function Home() {
   const navigate = useNavigate()
 
+  /**
+   * Navigates to a new page when the user inputs a username
+   * @param value username
+   */
   const handleInput = (value: string): void => {
     const navigateToUrl = `/${value}/repositories`
     navigate(navigateToUrl)

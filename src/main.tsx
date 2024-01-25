@@ -16,6 +16,9 @@ import {
 } from "@apollo/client"
 import { setContext } from "@apollo/client/link/context"
 
+/**
+ * Setup for apollo client to use graphql.
+ */
 const httpLink = createHttpLink({
   uri: import.meta.env.VITE_API_URL,
 })
@@ -35,6 +38,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 })
 
+/**
+ * Creates a router using react-router-dom to enable routing for the app
+ * Here we include the the routes and the elements they correspond to as well as url parameters
+ */
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>

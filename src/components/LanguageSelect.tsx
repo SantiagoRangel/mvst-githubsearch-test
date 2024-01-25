@@ -7,6 +7,10 @@ export default function LanguageSelect({
   getValue: (value: string) => void
   languages: string[]
 }) {
+  /**
+   * Passes value from select to callback when user selects an option
+   * @param e ChangeEvent
+   */
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>): void => {
     getValue(e.target.value)
   }

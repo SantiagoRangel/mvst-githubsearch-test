@@ -60,20 +60,36 @@ export default function UserRepositories() {
     }
   `
 
+  /**
+   * Apollo client's hook to fetch data according to the provided query
+   * @return {loading, error, data, fetchMore} the hook returns loading state, error state, data fetched and a function to call the query again
+   */
+
   const { loading, error, data, fetchMore } = useQuery(GET_USERREPOSITORIES, {
     variables: {
       username,
     },
   })
 
+  /**
+   * Stores the value from name filter in state
+   * @param value value from filter input
+   */
   const handleFilterInput = (value: string): void => {
     setNameFilter(value)
   }
 
+  /**
+   *  Stores the value from language filter in state
+   * @param value  value from language select
+   */
   const handleSelectFilter = (value: string): void => {
     setLanguageFilter(value)
   }
 
+  /**
+   * Filters repositories according to name and language filters each time they change
+   */
   useEffect(() => {
     if (!data) {
       return
@@ -95,6 +111,9 @@ export default function UserRepositories() {
     }
   }, [languageFilter, nameFilter])
 
+  /**
+   * Sets programming languages in state from the api call. Also sets in state the repositories from the api call and use the fetchMore * function to fetch all repositories merging the data in one object
+   */
   useEffect(() => {
     if (data?.user) {
       const languagesArray = data.user.repositories.nodes

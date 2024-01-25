@@ -3,6 +3,10 @@ export default function FilterInput({
 }: {
   getValue: (value: string) => void
 }) {
+  /**
+   * Passes value from input to the callback function when user types on the input field
+   * @param e ChangeEvent
+   */
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     getValue(e.target.value)
   }

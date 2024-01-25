@@ -13,6 +13,9 @@ export default function RepositoryPreview({
   const nameRef = useRef<HTMLAnchorElement>(null)
   const spanRef = useRef<HTMLDivElement>(null)
 
+  /**
+   * Sets context animation, add and removes event listeners to excecute hover animation for title
+   */
   useGSAP(
     (_context, contextSafe) => {
       const onHoverEffect = contextSafe!(() => {

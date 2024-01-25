@@ -25,10 +25,6 @@ export default {
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-
 Use a more generic component for navigation where you could enter color, size, font weight, and navigateTo url
 Instead of having two separate inputs I coould have one generic input with arguments to make it customizable
 Add fontawesome as package so it can be imported on storybook and visualized instead of using cdn option

@@ -25,3 +25,4 @@ Future Improvements
 - Instead of having two separate inputs, one generic input with arguments could be implemented to make it customizable and reusable on the app
 - Add fontawesome as a package so it can be imported on storybook and visualized instead of using cdn option
 - Another improvement could be deconstructing props for components so storybook can interact with the props the way they are supposed to
+- Re do the programming language filter to have a custom ui not using the plain html select element adding a proper cancel for the filter

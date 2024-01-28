@@ -26,3 +26,5 @@ Future Improvements
 - Add fontawesome as a package so it can be imported on storybook and visualized instead of using cdn option
 - Another improvement could be deconstructing props for components so storybook can interact with the props the way they are supposed to
 - Re do the programming language filter to have a custom ui not using the plain html select element adding a proper cancel for the filter
+- Use appollo client´s in memory cache configuration paramaters to properly fetch the repositories with pagination merging it one object. The current solution is not clean.
+- Write unit and end to end test.
